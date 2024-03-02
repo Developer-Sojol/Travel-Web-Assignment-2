@@ -1,0 +1,159 @@
+*{
+   padding: 0;
+   margin: 0;
+
+}
+
+.btn-primary{
+   padding: 15px 35px;
+   border-radius: 8px;
+   background: #FF5400;
+   color: #FFF;
+   border: 0;
+   cursor: pointer;
+}
+body{
+   
+   font-family: "Mulish", sans-serif;
+   font-style: normal;
+   width: 1440px;
+   margin: 0 auto;
+   background: #FFF;
+   
+}
+header{
+   margin: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+header span{
+   color: #FF5400;
+}
+.nav-title{
+   display: flex;
+   gap: 10px;
+}
+.nav-title h1{
+   color: #131318;
+   font-size: 2.5rem;  
+   font-weight: 800;  
+}
+nav > ul{
+   display: flex;
+
+}
+nav > ul > li {
+   list-style: none;
+   margin-left: 44px;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: #424247;
+   text-align: center;
+   font-size: 1.1rem;
+   font-weight: 400;
+}
+
+.banner-sec{
+   background-image: url("/Images/Group\ 13\ \(1\)\ \(1\).png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1350px;
+   height: 500px;
+   
+}
+.banner-div{
+   background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+.banner-text h1{
+   text-align: center;
+   color: #FFF;
+   font-size: 3.8rem;
+   font-weight: 800;
+   padding: 100px 0px 20px 0px;
+}
+.banner-text p{
+   color: #FFF;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   padding-bottom: 50px;
+}
+.form-div{
+   display: flex;
+   justify-content: center;
+}
+.form{
+   display:inline-block;
+   padding: 20px ;
+   border-radius: 8px;
+   background: rgba(255, 255, 255, 0.30);
+   
+}
+.form input{
+   padding: 15px;
+   flex-shrink: 0;
+   border-radius: 8px;
+   background: #FFF;
+   text-align: center;
+   border: 0;
+   margin-right: 20px;
+}
+
+
+@media screen  and (max-width:576px) {
+   body{
+      max-width: 576px;
+      margin: 0 auto;
+   }
+   header{
+      flex-direction: column;
+   }
+  
+   .nav-title h1{
+      font-size: 1.5rem;  
+ 
+   }
+  nav > ul{
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   row-gap: 15px;
+  }
+   nav > ul > li {
+     
+      margin-left: 10px;
+   }
+                                                      
+   .banner-sec{
+      width: 335px;
+      
+      margin: 0 auto;                                           
+   }
+   
+   .banner-text h1{
+      font-size: 1.8rem;  
+      padding:20px;
+   }
+   .banner-text p{  
+      font-size: 14px;
+      text-align:center;
+      width: 90%;
+      padding-bottom: 0;
+   }
+   .form-div{
+      margin: 20px;
+      padding-top: 0;
+      padding-bottom: 30px;
+   }
+   .form input{
+      width: 90%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+   }
+   .btn-primary{
+      width: 100%;
+   }
+}
