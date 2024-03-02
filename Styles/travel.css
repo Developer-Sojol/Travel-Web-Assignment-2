@@ -18,9 +18,7 @@ body{
    font-style: normal;
    width: 1440px;
    background: #FFF;
-   border: 2px solid red;
-   margin: 0 auto;
-   
+   margin: 0 auto;  
 }
 header{
    margin: 20px;
@@ -321,6 +319,51 @@ nav ul li a{
    text-align: center;
 }
 
+.footer{
+   width: 1440px;
+   height: 502px;
+   background: rgba(19, 19, 24, 0.05);
+}
+.footer-title{
+   display: flex;
+   gap: 0;
+   width: 30%;
+   margin-top:110px ;
+}
+.footer-title h1{
+   margin-left: -30px;
+   
+}
+.footer-text{
+   text-align: center;
+   padding-top: 40px;
+}
+.footer-text p{
+   margin: 20px 0;
+   color: #5A5A5D;
+   text-align: center;
+   font-size: 1rem;
+   line-height: 26px;
+}
+.icon{
+   border-bottom: 1px solid rgba(19, 19, 24, 0.10); 
+   padding-bottom: 100x;
+   height: 90px;
+   width: 870px;
+   margin-bottom: 40px;
+}
+.icon ul{
+   padding-top: 20px;
+   display: flex;
+   width: 20%;
+   list-style: none;
+
+}
+.footer li a{
+   color: #131318;
+   font-size: 1.3rem;
+}
+
 /* Responsive Css */
 @media screen  and (max-width:576px) {
    body{
@@ -478,5 +521,38 @@ nav ul li a{
    }
    .img-text h5{
       font-size: 20px;
+   }
+  
+
+   .footer{
+      width: 375px;
+      background: rgba(19, 19, 24, 0.05);
+      padding: 10px;
+   }
+   .footer-title{
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      margin-top:0px;
+   }
+   .footer-title h1{
+      margin-left: 5px;
+      
+   }
+   .footer-text{
+      padding-top: 40px;
+   }
+   .footer-text p{     
+      font-size: 14px;
+   }
+   .icon{ 
+      
+      height: 70px;
+      width: 350px;
+      margin-bottom: 40px;
+   }
+   .icon ul{
+      padding-top: 10px;
+      width: 50%; 
    }
 }
