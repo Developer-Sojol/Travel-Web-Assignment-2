@@ -255,7 +255,71 @@ nav ul li a{
 }
 
 
+.newsletter-sec{
+   display: flex;
+   margin: 0 auto;
+   margin-top: 30px;
+   max-width: 1140px;
+   gap: 20px;
+}
+.subscribe-form{
+   border-radius: 16px;
+   border: 1px solid #FF5400;
+   padding: 50px;
+   height: 50%;
+  
+}
+.subscribe-form h1{
+   color: #131318;
+   font-size: 24px;
+   font-weight: 800;
+   margin-bottom: 15px;
+   
+}
+.subscribe-form p{
+   color: #5A5A5D;
+   font-size: 16px;
+   padding: 10px 0;
+}
+.subscribe-form input{
+   width: 100%;
+   margin-top: 30px; 
+   border: 0;
+   padding: 20px;
+   border-radius: 8px;
+   background: rgba(19, 19, 24, 0.05);
+}
+.subscribe-form button{
+   margin-top: 30px;
+   width: 107%;
+   padding: 20px;
+   
+}
 
+.img-text{
+   position: relative;
+   width: 300px;
+   height: 100px;
+   transform: rotate(-19.628deg);
+   border-radius: 16px;
+   background: #FF5400;
+   padding: 20px;
+   position: relative;
+   top: -200px;
+   right: -155px;
+}
+.img-text h5{
+   color: #FFF;
+   text-align: center;
+   font-size: 1.5rem;
+
+}
+.img-text h3{
+   color: #FFF;
+   font-size: 2rem;
+   font-weight: 800;
+   text-align: center;
+}
 
 /* Responsive Css */
 @media screen  and (max-width:576px) {
@@ -390,5 +454,29 @@ nav ul li a{
    .choose-h1{
       font-size: 24px;   
    }
-   
+   .newsletter-sec{
+      flex-direction: column;
+      max-width: 576px;
+   }
+   .subscribe-form{
+      width: 50%;
+   }
+   .img-div{
+      width: 70%;
+   }
+   .img-div img{
+      width: 100%;
+   }
+   .img-text{
+      width: 30%;
+      right: -70px;
+      top: -155px;
+      padding: 10px 50px;
+   }
+   .img-text h3{
+      font-size: 30px;
+   }
+   .img-text h5{
+      font-size: 20px;
+   }
 }
